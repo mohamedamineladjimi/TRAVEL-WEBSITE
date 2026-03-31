@@ -21,7 +21,14 @@
     <div class="container justify-content-center">
         <div class="navbar-nav">
             <a class="nav-link" href="#">Home</a>
-<a class="nav-link" href="https://www.google.com/maps" target="_blank">Destinations</a>
+            <div class="destinations-dropdown">
+              <a href="#" class="nav-link destinations-trigger">Destinations</a>
+              <ul class="destinations-menu">
+                <li><a href="#" data-bs-target="#carouselExample" data-bs-slide-to="0" class="dropdown-item nav-link">Tunis City Tour</a></li>
+                <li><a href="#" data-bs-target="#carouselExample" data-bs-slide-to="1" class="dropdown-item nav-link">Sahara Adventure</a></li>
+                <li><a href="#" data-bs-target="#carouselExample" data-bs-slide-to="2" class="dropdown-item nav-link">Djerba Escape</a></li>
+              </ul>
+            </div>
             <a class="nav-link" href="#">Cart</a>
             <a class="nav-link" href="#">Contact</a>
             <a  class="nav-link" href="#">book</a>
@@ -30,34 +37,32 @@
 </nav>
 
 <div class="container my-5">
-    <h2 class="mb-4 text-center">Popular Destinations</h2>
 
-<div class="row g-4 justify-content-center">
 
-    <div class="col-md-4 d-flex justify-content-center">
-        <div class="card" style="width: 18rem;">
+<div id="carouselExample" class="carousel slide carousel-dark" data-bs-interval="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="card w-75 mx-auto" style="max-width: 20rem;">
             <img src="assets/tunis.jpg" class="card-img-top" alt="Tunis">
             <div class="card-body">
                 <h5 class="card-title">Tunis City Tour</h5>
                 <p class="card-text">Explore the heart of Tunisia</p>
                 <a href="#" class="btn btn-primary">Book Now</a>
             </div>
+      </div>
     </div>
-    </div>
-
-    <div class="col-md-4 d-flex justify-content-center">
-        <div class="card" style="width: 18rem;">
+    <div class="carousel-item">
+      <div class="card w-75 mx-auto" style="max-width: 20rem;">
             <img src="assets/sahara.jpg" class="card-img-top" alt="Sahara">
                 <div class="card-body">
                 <h5 class="card-title">Sahara Adventure</h5>
                 <p class="card-text">عيش تجربة الصحراء</p>
                 <a href="#" class="btn btn-primary">Book Now</a>
         </div>
+      </div>
     </div>
-    </div>
-
-    <div class="col-md-4 d-flex justify-content-center">
-        <div class="card" style="width: 18rem;">
+    <div class="carousel-item">
+      <div class="card w-75 mx-auto" style="max-width: 20rem;">
             <img src="assets/djerba.jpg" class="card-img-top" alt="Djerba">
             <div class="card-body">
                 <h5 class="card-title">Djerba Escape</h5>
@@ -66,8 +71,16 @@
             </div>
         </div>
     </div>
-
-    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
